@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.RegisterActivity">
+
+    <TextView
+        android:id="@+id/make"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Make Your Account"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp">
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"
+        android:fontFamily="@font/poppins_mediumitalic"
+        android:inputType="text"
+
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="142dp"/>
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:fontFamily="@font/poppins_mediumitalic"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/name"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:fontFamily="@font/poppins_mediumitalic"
+        android:inputType="textPassword"
+        android:layout_below="@+id/email"
+        />
+
+    <EditText
+        android:id="@+id/password_conf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password Confirm"
+        android:fontFamily="@font/poppins_mediumitalic"
+        android:inputType="textPassword"
+        android:layout_below="@+id/password"
+        />
+
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_conf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:text="Register"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:backgroundTint="#B8C7CE"
+        android:text="Back to Login"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
